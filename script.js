@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Intersection Observer for Animations (Progress & Counters)
     const observerOptions = {
-        threshold: 0.2
+        threshold: 0.05
     };
 
     const observer = new IntersectionObserver((entries) => {
