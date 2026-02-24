@@ -599,6 +599,10 @@ section {
 }
 
 @media (max-width: 968px) {
+    section {
+        padding: 80px 0 !important;
+    }
+
     .nav-toggle {
         display: flex;
     }
@@ -609,7 +613,7 @@ section {
         right: -100%;
         width: 80%;
         height: 100vh;
-        background: #000;
+        background: var(--color-bg);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -629,16 +633,68 @@ section {
 
     .hero-bg-portrait {
         width: 100%;
-        opacity: 0.3;
+        opacity: 0.4;
     }
 
     .hero-content {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .btn-red {
+        margin: 0 auto;
+    }
+
+    .about-portrait {
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
     }
 
     .stats-grid {
         grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+    }
+
+    .info-grid,
+    .education-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 60px 0 !important;
+    }
+
+    .hero-main-title {
+        font-size: 3.5rem;
+    }
+
+    .info-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-title,
+    .projects h2,
+    .skills h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .project-card {
+        padding: 30px !important;
+    }
+
+    .skill-pills {
+        gap: 10px;
+    }
+
+    .skill-pill {
+        padding: 8px 15px;
+        font-size: 0.7rem;
     }
 }
 
@@ -648,6 +704,11 @@ section {
     }
 
     .hero-main-title {
-        font-size: 4rem;
+        font-size: 2.8rem;
+    }
+
+    .about-portrait {
+        width: 280px;
+        height: 280px;
     }
 }
